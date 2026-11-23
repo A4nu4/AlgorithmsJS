@@ -1,0 +1,8 @@
+function reverse(str) {
+  // If string is less than or equal to 1 word, return string
+  if (str.length <= 1) return str;
+  const firstLetter = str[0];
+  return reverse(str.slice(1)) + firstLetter;
+}
+
+console.log(reverse("awesome"));
